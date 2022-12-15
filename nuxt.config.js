@@ -19,6 +19,13 @@ export default {
     ]
   },
 
+  serverMiddleware: [
+    {
+      path: "api",
+      handler: "~/serverMiddleware/api"
+    }
+  ],
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -32,13 +39,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
+
+  axios: {
+    baseURL: 'http://localhost:3000', // Used as fallback if no runtime config is provided
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
