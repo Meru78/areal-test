@@ -1,0 +1,85 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.13 (Ubuntu 12.13-1.pgdg20.04+1)
+-- Dumped by pg_dump version 12.13 (Ubuntu 12.13-1.pgdg20.04+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: words; Type: TABLE; Schema: public; Owner: rkis3_user
+--
+
+CREATE TABLE public.words (
+    uuid character varying NOT NULL,
+    text character varying NOT NULL,
+    "createdAt" timestamp without time zone,
+    "updatedAt" timestamp without time zone
+);
+
+
+ALTER TABLE public.words OWNER TO rkis3_user;
+
+--
+-- Data for Name: words; Type: TABLE DATA; Schema: public; Owner: rkis3_user
+--
+
+COPY public.words (uuid, text, "createdAt", "updatedAt") FROM stdin;
+023fec1b-6e8d-431e-8d5b-4121bfac13f2	aaa	2022-12-15 12:10:37.623193	2022-12-15 12:10:37.623193
+5f4e515f-543d-4491-a4c5-eb7d36af90e8		2022-12-15 12:11:19.477485	2022-12-15 12:11:19.477485
+29b0030c-e174-4bb9-828d-15cbc5995406		2022-12-15 12:11:38.284732	2022-12-15 12:11:38.284732
+914b254c-8446-4c73-b0f3-628e3eb05f0f		2022-12-15 12:17:46.867152	2022-12-15 12:17:46.867152
+5a90592f-f18d-4fd3-91b8-98d14a270c76		2022-12-15 12:17:54.428184	2022-12-15 12:17:54.428184
+8795e3bb-47f1-4aa1-a577-d63cd032b931	231	2022-12-15 12:17:59.039093	2022-12-15 12:17:59.039093
+820df05b-7f2a-465b-865f-7ce2d4febe77	231	2022-12-15 12:18:33.22698	2022-12-15 12:18:33.22698
+73ace390-7f2d-4d9d-a75d-de016dcc8703	231	2022-12-15 12:18:36.215478	2022-12-15 12:18:36.215478
+814e3d70-0fcc-4d8f-8f7a-1d31481272d4	231	2022-12-15 12:18:37.942832	2022-12-15 12:18:37.942832
+c3b90121-76c7-45ff-b43a-fd7da7d383a3		2022-12-15 12:18:41.456004	2022-12-15 12:18:41.456004
+92a0d27c-fb26-483d-bbb7-b792cde5f4ae	213\n	2022-12-15 12:18:50.896087	2022-12-15 12:18:50.896087
+1f267745-6a38-4c09-a805-00fdecf3adc9	213\n	2022-12-15 12:19:02.86921	2022-12-15 12:19:02.86921
+ae456f3a-14c1-45cb-b210-312eb99ec854	asd	2022-12-15 12:21:20.27469	2022-12-15 12:21:20.27469
+459da8b1-d718-445a-81af-db9ce80ae962	a	2022-12-15 12:21:54.941945	2022-12-15 12:21:54.941945
+f1b97def-f4d5-4967-b08b-dde8776a9a48		2022-12-15 12:23:44.134219	2022-12-15 12:23:44.134219
+cec1623a-8514-4b99-bebf-7998cb36813b	123	2022-12-15 12:25:53.785044	2022-12-15 12:25:53.785044
+d3ea8912-f237-4fba-9d88-3ca19affb31b	123	2022-12-15 12:25:55.985577	2022-12-15 12:25:55.985577
+b35956cd-c5a2-4db1-9265-f0a99bce545c	123	2022-12-15 12:25:56.61757	2022-12-15 12:25:56.61757
+420e045a-f7c4-4829-bffe-b7de98620aee	123	2022-12-15 12:25:56.824657	2022-12-15 12:25:56.824657
+4a18f664-0b31-4119-992e-861a02f11d69	123	2022-12-15 12:25:57.193607	2022-12-15 12:25:57.193607
+3a559190-61b2-4851-b80e-98aa5f90cbce		2022-12-15 12:26:49.825999	2022-12-15 12:26:49.825999
+b269d7f2-dfc7-403f-ba18-e210b3ff8753	12	2022-12-15 12:26:54.059988	2022-12-15 12:26:54.059988
+4453d79f-46b8-45ab-95ab-8210ec51bde1		2022-12-15 12:27:30.657613	2022-12-15 12:27:30.657613
+f2c16902-a40f-499e-aa2d-abdb8b7a2374	adasd	2022-12-15 12:28:07.724953	2022-12-15 12:28:07.724953
+34e10bc2-fa64-4008-9f86-29a3ff8a6eab		2022-12-15 12:28:25.463967	2022-12-15 12:28:25.463967
+df786e6a-a1ef-490f-aa6e-cb2d7f4762b1	gafd	2022-12-15 12:30:13.365337	2022-12-15 12:30:13.365337
+311b7e25-f1b3-4174-be82-e5d02ef3b87a		2022-12-15 12:30:51.41742	2022-12-15 12:30:51.41742
+447664ed-46eb-478e-842c-ca52df0aafde		2022-12-15 12:30:53.761503	2022-12-15 12:30:53.761503
+b9fd3d65-c789-4912-9820-b4b513f22ad5	sad	2022-12-15 12:31:45.38265	2022-12-15 12:31:45.38265
+\.
+
+
+--
+-- Name: words words_pkey; Type: CONSTRAINT; Schema: public; Owner: rkis3_user
+--
+
+ALTER TABLE ONLY public.words
+    ADD CONSTRAINT words_pkey PRIMARY KEY (uuid);
+
+
+--
+-- PostgreSQL database dump complete
+--
+

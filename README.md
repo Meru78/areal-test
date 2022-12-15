@@ -70,12 +70,3 @@ More information about the usage of this directory in [the documentation](https:
 
 
 
-table for db
-CREATE TABLE IF NOT EXISTS public.words
-(
-    uuid character varying COLLATE pg_catalog."default" NOT NULL,
-    text character varying COLLATE pg_catalog."default" NOT NULL,
-    "createdAt" timestamp without time zone,
-    "updatedAt" timestamp without time zone,
-    CONSTRAINT words_pkey PRIMARY KEY (uuid)
-)
